@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Click Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="page-container background-grid">
+
+        <header>
+            <button id="button-theme" class="button-theme"><i class="bi bi-moon"></i></button>
+
+            <h1>Kitty Click Game</h1>
+            <p class="animation-highlight">You have 10 seconds to click the cat as many times as possible!</p>
+        </header>
+
+        <section class="game-container">
+            <button id="clickBtn" disabled class="btn-cat">
+                <img src="assets/img/cat.gif" alt="Clique ici !">
+            </button>
+            <p>Score: <span id="score">0</span></p>
+
+            <button id="startBtn" class="btn">Start</button>
+
+        </section>
+
+        <section class="ranking-container">
+            <h2>Ranking</h2>
+            <ul id="scoreList"></ul>
+            <button id="resetBtn" class="btn">Reset Ranking</button>
+        </section>
+        
+    
+
+        <footer>
+            <p>© 2025 Nihad E. - All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="assets/js/button-theme.js"></script>
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+    <script src="assets/js/animations-rought-notation.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
